@@ -34,7 +34,7 @@ body p{
     z-index: 1000;
     width: 100%;
     background: transparent;
-    padding: 27px 17%;
+    padding:2rem 6rem 2rem 8rem;
     display: flex;
     justify-content: space-between;
     transition: all .50s ease;
@@ -45,8 +45,6 @@ body p{
     backdrop-filter: blur(35px);
 }
 .logo{
-    position:absolute;
-    left:46px;
     font-size: 30px;
     font-weight: 700;
     color: #fff;
