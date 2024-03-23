@@ -1,15 +1,15 @@
-const header = document.querySelector(".header");
+const header = document.querySelector("header");
 
 window.addEventListener("scroll", function() {
     header.classList.toggle("sticky", window.scrollY >60)
 });   
 
 let menu = document.querySelector('#menu-icon');
-let navba = document.querySelector('.navba');
+let navbar = document.querySelector('.navbar');
 
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
-    navba.classList.toggle('open');
+    navbar.classList.toggle('open');
 };
 //javascript for video slider navigation
 const  btns = document.querySelectorAll(".nav-btn");
@@ -58,7 +58,7 @@ function toggleClip(){
 function changeBg(bg, title) {  
     const banner = document.querySelector('.banner');
     const contents = document.querySelectorAll('.content');
-    banner.style.background = `url("../images/movies/${bg}")`;
+    banner.style.background = `url("./images/${bg}")`;
     banner.style.backgroundSize = 'cover';
     banner.style.backgroundPosition = 'center';
    
