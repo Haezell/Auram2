@@ -14,6 +14,10 @@
 .link{
     color: #000000;
 }
+html{
+    line-height:  inherit;
+    font-size: 14px;
+}
 body{
     background: #fff1a5;
 
@@ -27,7 +31,7 @@ body h2{
 body p{
     font-size: 1rem;
 }
-.header{
+header{
     position: fixed;
     top: 0;
     right: 0;
@@ -35,17 +39,17 @@ body p{
     width: 100%;
     background: transparent;
     padding:2rem 6rem 2rem 8rem;
-    display: flex;
+    display: flex  !important;
     justify-content: space-between;
     transition: all .50s ease;
 }
-.header.sticky{
+header.sticky{
     padding: 8px 17%;
     background: transparent;
     backdrop-filter: blur(35px);
 }
 .logo{
-    font-size: 20px;
+    font-size: 33px;
     font-weight: 700;
     color: #fff;
 }
@@ -79,7 +83,7 @@ span{
 }
 .navbar a{
     color: #fff;
-    font-size: 1rem ;
+    font-size: 1rem !important;
     font-weight: 500;
     margin: 15px 22px;
     transition: all .50s ease;
@@ -192,18 +196,17 @@ section{
     z-index: 777;
     color: #fff;
     width: 80%; 
-    margin-top: 50px;
+    margin-top: 80px;
     display: none;
 } 
 .content-home.active{
     display: block;
 }
 .content-home h1{
-    font-size: 3em;
+   font-size: 2em;
     font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 75px;
+    text-transform: uppercase;   
+    line-height: 45px;
     margin-bottom: 30px;
     color: #ffa343;
 }
@@ -1037,7 +1040,7 @@ header.sticky{
    }
 
 }
-@media (max-width: 370px){
+@media (max-width: 390px){
     .h-right a{
      margin-left: 1px;   
     }
