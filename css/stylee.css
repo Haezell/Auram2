@@ -1048,8 +1048,11 @@ header.sticky{
         padding: 5px 5% 50px;
     }
     .footer {
-        gap: 1rem;
-        
+        gap: 1rem;   
     }
+     .home{
+        align-items: center;
+    }
+}
 }
 
