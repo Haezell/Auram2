@@ -18,6 +18,10 @@ html{
 .link{
     color: #000000;
 }
+html{
+    line-height:  inherit;
+    font-size: 14px;
+}
 body{
     background: #fff1a5;
 
@@ -968,6 +972,7 @@ header.sticky{
 }
 
 @media (max-width: 1040px) {
+
    
     section{
         padding: 10px 50px;
@@ -1306,4 +1311,5 @@ header.sticky{
     
     
 }
+
 
