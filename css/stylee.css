@@ -402,6 +402,7 @@ header.sticky{
     transition: 0.5s;
     left: 10px;
     padding: 0 500px 0 130px;
+    z-index: 999;
    
 }
 .content.active{
