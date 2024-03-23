@@ -901,9 +901,6 @@ header.sticky{
 }
 
 @media (max-width: 1040px) {
-    header{
-        padding: 12px 20px;
-    }
     section{
         padding: 10px 50px;
     }
