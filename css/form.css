@@ -266,20 +266,19 @@ form button:hover{
  
 /*footer*/
 .footer{
-    height: 60vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-    gap: 2rem;
+    gap: 1rem;
     padding-top: 10px;
     padding-bottom: 10px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.774),rgba(0, 0, 0, 0.205)),url(../img/Footer-4.png);
     background-size: cover;
-    background-position: bottom center; 
-    
+    background-position: bottom center;   
 }
 .footer-box{
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 .footer-box h3{
     font-size: 17px;
@@ -291,8 +290,7 @@ form button:hover{
     color: #ffffff;
     margin-bottom: 0.8rem;
     transition: all .50s ease;
-    font-size: 0.8rem;
-   
+    font-size: 0.8rem;   
 }
 .footer-box a:hover{
     transform: translateX(-10px);
@@ -325,8 +323,6 @@ form button:hover{
 .social-box{
     justify-content: center;
     display: grid;
-
-
 }
 .social a:hover{
     background: #ffa343;

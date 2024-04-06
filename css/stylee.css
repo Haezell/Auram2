@@ -23,9 +23,10 @@ html{
     font-size: 14px;
 }
 body{
-    background: #fff1a5;
-
+    background: rgb(255, 255, 255);
+   
 }
+
 body h1{
     font-size: 6rem;
 }
@@ -259,9 +260,67 @@ header.sticky{
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     align-items: center;
     text-align: center;
-    gap: 3rem;
+    justify-content: center;
+    gap: 3rem; 
+}
+.feature .log img{
+    position:relative;
+    width: 15%;
+    margin: 0;
+}
+.log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.feature h2{
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 0 50px 0;
+}
+.feature span{
+    font-size: 40px;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    line-height: 9px;
+    font-family: "Dancing Script", Sans-serif;
+
+}
+.tag{
+    background: #afa7a7;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
    
 }
+.tag .log img{
+    position:relative;
+    width: 15%;
+    margin: 0;
+}
+.tag h2{
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 0 50px 0;
+}
+.tag span{
+    font-size: 40px;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    line-height: 9px;
+    font-family: "Dancing Script", Sans-serif;
+}
+
+
 .row-img{
      overflow: hidden;
      width: 100px;
@@ -348,6 +407,8 @@ header.sticky{
     background: #fff;
     border-radius: 10px;
     padding: 2vw 3vw 1vw 3vw;
+    margin-top: 10px;
+    border: 4px solid #d9d6d2;  
 }
 /*Slides*/
 .trekking{
@@ -392,23 +453,6 @@ header.sticky{
     align-items: center;
     justify-content: center;
     display: flex;
-}
-.content{
-    position: absolute;
-    max-width: 850px; 
-    display: block;
-    visibility: hidden;
-    transform: scale(0);
-    transition: 0.5s;
-    left: 10px;
-    padding: 0 500px 0 130px;
-   
-}
-.content.active{
-    display: block;
-    visibility: visible;
-    transform: scale(1);
-    transition: 0.5s;
 }
 .banner .content h4{
     color: rgb(243, 243, 31);
@@ -510,7 +554,7 @@ header.sticky{
     transition: 0.5s;
 }
 .trailer video{
-    height: 70vh;
+    height: 61vh;
     max-width: 900px;
     outline: none;
     border-radius: 10px;
@@ -537,7 +581,7 @@ header.sticky{
     transition: 0.5s;
 }
 .clip video{
-    height: 70vh;
+    height: 61vh;
     max-width: 900px;
     outline: none;
     border-radius: 10px;
@@ -609,6 +653,7 @@ header.sticky{
     transition: 0.5s;
     left: 10px;
     padding: 0 500px 0 130px;
+    z-index: 800;
    
 }
 .content.active{
@@ -629,6 +674,7 @@ header.sticky{
     line-height: 1.5em;
     color: #fff;
     margin: 10px 0 20px;
+    text-align: justify;
 }
 .bannel .content .button{
     position: relative;
@@ -776,24 +822,18 @@ header.sticky{
     border-radius: 5px;
 }
 /*footer*/
-
-.footer{
-   
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.855),rgba(0, 0, 0, 0.641)),url(../img/Footer-4.png);
+.footer{ 
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.855),rgba(0, 0, 0, 0.641)),url(../img/pexels-ray-bilcliff-7322973.jpg);
     background-size: cover;
     background-position: bottom center; 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-    gap: 1rem;
- 
-    
-   
+    gap: 1rem;  
 }
 .footer-box{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    
+    text-align: center;   
 }
 .footer-box h3{
     font-size: 15px;
@@ -806,8 +846,7 @@ header.sticky{
     margin-bottom: 0.8rem;
     transition: all .50s ease;
     font-size: 15px;
-    line-height: 20px;
-    
+    line-height: 20px;    
 }
 .footer-box a:hover{
     transform: translateX(-10px);
@@ -839,14 +878,11 @@ header.sticky{
 .social-box{
     justify-content: center;
     display: grid;
-
-
 }
 .social a:hover{
     background: #ffa343;
     color: #fff;
     transform: translateX(-4px);
-
 }
 /*copyright*/
 .copyright{
@@ -855,8 +891,7 @@ header.sticky{
     padding-bottom: 20px;
 }
 .copyright P{
-    text-align: center;
-    
+    text-align: center;  
     color: #979797;
     font-size: 15px;
 }
@@ -887,34 +922,48 @@ header.sticky{
     .biking{
         gap: 3rem;
     }
+    .content {   
+        width: 25%;    
+        padding: 0 0 0 50px;
+      
+    }
+    .banner .carousel-box {
+        height: 70vh;
+        position: absolute;
+        right: 36%;
+        min-width: 600px !important;  
+    }
+    .bannel .carousel-box {
+        height: 70vh;
+        position: absolute;
+        right: 36%;
+        min-width: 600px !important;  
+    }
+    .carousel {
+        height: 500px !important;
+    }
+    .holiday-text h5 {
+        letter-spacing: 0px;     
+        padding: 0;
+    }
+    .banner .content p {
+       
+        margin: 10px 40px 20px 0;
+    }
+    .bannel .content p {
+        
+        margin: 10px 40px 20px 0;
+    }
+    html {
+        font-size: 14px !important;
+    }
 }
  
- @media (max-width: 1500px){
-        .banner .carousel-box {
-            position: absolute;
-            right: 33rem;
-            min-width: 400px !important;  
-        }
-        .bannel .carousel-box {
-            position: absolute;
-            right: 33rem;
-            min-width: 400px !important;  
-        }
-        .carousel {
-            height: 500px !important;   
-        }
-        .holiday-text p {
-            
-            font-weight: 500;
-            line-height: 25px;
-            margin-bottom: 35px;     
-        }
-        .holiday-text h5 {
-            letter-spacing: 0px;     
-            padding: 0;
-        }
-}
+
 @media (max-width: 1200px){
+    html {
+        font-size: 14px !important;
+    }
     header{
         padding: 14px 5%;
     }
@@ -936,14 +985,20 @@ header.sticky{
     .home{
         height: 90vh;
     }
+    .content {   
+        width: 25%;    
+        padding: 0 0 0 50px;  
+    }
     .banner .carousel-box {
+        height: 70vh;
         position: absolute;
-        right: 29rem;
+        right: 36%;
         min-width: 400px !important;  
     }
     .bannel .carousel-box {
+        height: 70vh;
         position: absolute;
-        right: 29rem;
+        right: 36%;
         min-width: 400px !important;  
     }
     .carousel {
@@ -961,19 +1016,19 @@ header.sticky{
         
         margin: 10px 40px 20px 0;
     }
-    .banner .carousel-box {
-        right: 25rem;
-        min-width: 300px !important;
+    .trailer video {
+        height: 62vh;
     }
-    .bannel .carousel-box {
-        right: 25rem;
-        min-width: 300px !important;
+    .clip video{
+        height: 62vh; 
     }
+    
 }
 
-@media (max-width: 1040px) {
-
-   
+@media (max-width: 1040px) { 
+    html {
+        font-size: 14px !important;
+    }
     section{
         padding: 10px 50px;
     }
@@ -1022,8 +1077,33 @@ header.sticky{
     .biking-img img {
         height: 45vh;
     }
+    .banner .carousel-box {
+        position: absolute;
+        right: 35%;
+        min-width: 400px !important;  
+    }
+    .bannel .carousel-box {
+        position: absolute;
+        right: 35%;
+        min-width: 400px !important;  
+    }
+    .slider-navigation {
+        margin-bottom: 100px;
+    }
+    .trailer video {
+        height: 400px;
+        max-width: 700%;
+    }
+    .clip video{
+        height: 400px; 
+        max-width: 700%;
+    }
+          
 }
 @media (max-width: 800px){
+    html {
+        font-size: 14px !important;
+    }
     .holiday{
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -1047,10 +1127,118 @@ header.sticky{
         height: 35vh;    
         object-fit: cover;
     }
-   
- 
+    .banner {
+        border-radius: 10px;
+        height: 110vh;      
+        display: grid;
+        justify-content: center;
+    }    
+    .bannel {
+        border-radius: 10px;
+        height: 110vh;      
+        display: grid;
+        justify-content: center;  
+    }
+    .cycling {  
+        border: 3px solid #ffffff;
+        border-radius: 10px; 
+        display: flex;
+        align-items: center;     
+    }
+    .trekking {
+        border: 3px solid #ffffff;
+        border-radius: 10px;
+        height: 110vh;
+        display: flex;
+        align-items: center;
+    }
+    .bannel .holiday-text {
+        top: 66%;
+        left: 5%;
+        position: absolute;
+        width: 90%;
+        bottom: 1%;
+    }
+    .banner .holiday-text {
+        top: 66%;
+        left: 5%;
+        position: absolute;
+        width: 90%;
+        bottom: 1%;
+    }
+    .content {
+        display: flex;  
+        top: 10px;
+        padding: 0 20px 0 20px;
+        width: 100%;
+    }
+    .banner .content h4 {
+        font-size: 20px;
+        line-height: 10% !important;
+        text-align: center;
+    }
+    .banner .content .button {
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .banner .content p {
+        margin: 5px;
+        text-align: center;
+    }
+    .bannel .content h4 {
+        font-size: 20px;
+        line-height: 10% !important;
+        text-align: center;
+    }
+    .bannel .content .button {
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .bannel .content p {
+        margin: 5px;
+        text-align: center;
+    }
+    .banner .carousel-box {
+        right: 7%;
+        min-width: 680px !important;
+        top: 20%;
+        height: 50vh;
+    }
+    .bannel .carousel-box {
+        right: 7%;
+        min-width: 680px !important;
+        top: 20%;
+        height: 50vh;
+    }
+    .carousel {
+        height: 600px !important;
+        margin-bottom: 100px;
+    } 
+    .holiday-text p{
+        line-height: 30px;
+       }
+    .holiday-text h5 {
+        letter-spacing: 10px;
+        padding: 0;    
+    }
+    .trailer video {
+        height: 340px;
+        max-width: 600px;
+    }
+    .clip video{
+        height: 340px; 
+        max-width: 600%;
+    }
+        
 }
 @media (max-width: 650px){
+    html {
+        font-size: 14px !important;
+    }
     .home-text h1{
         font-size: 2.1rem;
         text-align: center;
@@ -1077,6 +1265,100 @@ header.sticky{
     .slider-navigation {   
         margin-bottom: 70px;
     }
+    .banner {
+        border-radius: 10px;
+        height: 110vh;      
+        display: grid;
+        justify-content: center;
+    }    
+    .bannel {
+        border-radius: 10px;
+        height: 110vh;      
+        display: grid;
+        justify-content: center;  
+    }
+    .cycling {  
+        border: 3px solid #ffffff;
+        border-radius: 10px;      
+    }
+    .trekking {
+        border: 3px solid #ffffff;
+        border-radius: 10px;
+        height: 110vh;
+    }
+    .bannel .holiday-text {
+        top: 66%;
+        left: 5%;
+        position: absolute;
+        width: 90%;
+        bottom: 1%;
+    }
+    .banner .holiday-text {
+        top: 66%;
+        left: 5%;
+        position: absolute;
+        width: 90%;
+        bottom: 1%;
+    }
+    .content {
+        display: flex;  
+        top: 10px;
+        padding: 0 20px 0 20px;
+        width: 100%;
+    }
+    .banner .content h4 {
+        font-size: 20px;
+        line-height: 10% !important;
+        text-align: center;
+    }
+    .banner .content .button {
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .banner .content p {
+        margin: 5px;
+        text-align: center;
+    }
+    .bannel .content h4 {
+        font-size: 20px;
+        line-height: 10% !important;
+        text-align: center;
+    }
+    .bannel .content .button {
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .bannel .content p {
+        margin: 5px;
+        text-align: center;
+    }
+    .banner .carousel-box {
+        right: 7%;
+        min-width: 500px !important;
+        top: 20%;
+        height: 50vh;
+    }
+    .bannel .carousel-box {
+        right: 7%;
+        min-width: 500px !important;
+        top: 20%;
+        height: 50vh;
+    }
+    .carousel {
+        height: 600px !important;
+        margin-bottom: 100px;
+    } 
+    .holiday-text p{
+        line-height: 30px;
+       }
+    .holiday-text h5 {
+        letter-spacing: 4px;       
+    }
+    
       
 }
 @media (max-width: 450px){
@@ -1090,8 +1372,7 @@ header.sticky{
         padding: 5px 6% 50px;
     }
    .footer{
-    gap: 1rem;
-  
+        gap: 1rem; 
    }
    .footer-box h3{
     font-size: 15px;
@@ -1110,32 +1391,34 @@ header.sticky{
    }
    .banner {
     border-radius: 10px;
-    height: 1000px;      
+    height: 110vh;      
     display: grid;
     justify-content: center;
-   
 }
 .bannel {
     border-radius: 10px;
-    height: 900px;      
+    height: 110vh;      
     display: grid;
-    justify-content: center;
-   
+    justify-content: center;  
+}
+.cycling {  
+    border: 3px solid #ffffff;
+    border-radius: 10px;      
 }
 .trekking {
     border: 3px solid #ffffff;
     border-radius: 10px;
-    height: 100vh;
+    height: 110vh;
 }
 .bannel .holiday-text {
-    top: 69%;
+    top: 66%;
     left: 5%;
     position: absolute;
     width: 90%;
     bottom: 1%;
 }
 .banner .holiday-text {
-    top: 61%;
+    top: 66%;
     left: 5%;
     position: absolute;
     width: 90%;
@@ -1145,6 +1428,7 @@ header.sticky{
     display: flex;  
     top: 10px;
     padding: 0 20px 0 20px;
+    width: 100%;
 }
 .banner .content h4 {
     font-size: 20px;
@@ -1155,7 +1439,7 @@ header.sticky{
     position: relative;
     align-items: center;
     display: flex;
-    margin-left: 80px;
+    justify-content: center;
 }
 .banner .content p {
     margin: 5px;
@@ -1170,31 +1454,34 @@ header.sticky{
     position: relative;
     align-items: center;
     display: flex;
-    margin-left: 80px;
+    justify-content: center;
 }
 .bannel .content p {
     margin: 5px;
     text-align: center;
 }
 .banner .carousel-box {
-    right: 2.8rem;
-    min-width: 330px !important;
-    top: 15%;
+    right: 7%;
+    min-width: 350px !important;
+    top: 20%;
     height: 50vh;
 }
 .bannel .carousel-box {
-    right: 2.8rem;
-    min-width: 330px !important;
-    top: 17%;
+    right: 7%;
+    min-width: 350px !important;
+    top: 20%;
     height: 50vh;
 }
 .carousel {
     height: 600px !important;
     margin-bottom: 100px;
 } 
-.cycling {  
-    margin-top: 90px;
-}
+.holiday-text p{
+    line-height: 30px;
+   }
+   .holiday-text h5 {
+    letter-spacing: 4px
+}   
 
 }
 @media (max-width: 390px){
@@ -1207,8 +1494,7 @@ header.sticky{
 
     .footer {
         gap: 0.1px;
-        height: 80vh;
-        
+        height: 80vh;       
     }
     .home{
         align-items: center;
@@ -1221,34 +1507,38 @@ header.sticky{
         font-size: 12px;
         line-height: 20px;    
     }
+
     .banner {
         border-radius: 10px;
-        height: 1000px;      
+        height: 110vh;      
         display: grid;
-        justify-content: center;
-       
+        justify-content: center;    
     }
     .bannel {
         border-radius: 10px;
-        height: 900px;      
+        height: 114vh;      
         display: grid;
-        justify-content: center;
-       
+        justify-content: center;     
     }
+    .cycling {  
+        border: 3px solid #ffffff;
+        border-radius: 10px;      
+    }
+    
     .trekking {
         border: 3px solid #ffffff;
         border-radius: 10px;
-        height: 100vh;
+        height: 110vh;
     }
     .bannel .holiday-text {
-        top: 64%;
+        top: 66%;
         left: 5%;
         position: absolute;
         width: 90%;
         bottom: 1%;
     }
     .banner .holiday-text {
-        top: 56%;
+        top: 66%;
         left: 5%;
         position: absolute;
         width: 90%;
@@ -1258,6 +1548,7 @@ header.sticky{
         display: flex;  
         top: 10px;
         padding: 0 20px 0 20px;
+        width: 100%;
     }
     .banner .content h4 {
         font-size: 20px;
@@ -1290,25 +1581,37 @@ header.sticky{
         text-align: center;
     }
     .banner .carousel-box {
-        right: 1rem;
-        min-width: 330px !important;
-        top: 15%;
+        right: 7%;
+        min-width: 310px !important;
+        top: 20%;
         height: 50vh;
     }
     .bannel .carousel-box {
-        right: 1rem;
-        min-width: 330px !important;
-        top: 17%;
+        right: 7%;
+        min-width: 310px !important;
+        top: 20%;
         height: 50vh;
     }
     .carousel {
         height: 600px !important;
         margin-bottom: 100px;
+        height: 115%;
     } 
-    .cycling {  
-        margin-top: 210px;
-    }
-    
+   .holiday-text p{
+    line-height: 24px;
+   }
+   .holiday-text h5 {
+    letter-spacing: 0;   
+   }
+   .trailer video {
+    height: 200px;
+    max-width: 100%;
+   }
+   .clip video{
+    height: 200px; 
+    max-width: 100%;
+}
+   
     
 }
 

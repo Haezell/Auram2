@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>FAQ</title>
+        <title>Travel Tour</title>
 
         <!---custom css link-->
         <link rel="stylesheet" type="text/css" href="css/contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     
         <!---boxicons link-->
         <link rel="stylesheet"
@@ -16,20 +17,25 @@
         <!---google fonts link-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     </head>
     <body>
-         
-         <!---header design-->
-         <header>
-            <a href="#" class="logo">AURAM<span>SAFARIS</span></a>
+       
+        <!---header design-->
+        <header>
+            <div class="left">
+                <a href="#" class="logo">AURAMSAFARIS</a>
+            </div>
+            
 
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="FAQ.html">FAQ</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Portfolio</a></li>                
+                <li><a href="#">About Us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="#">Portfolio</a></li>
+                
             </ul>
 
             <div class="h-right">
@@ -41,54 +47,137 @@
                 <div class="box box-menu" id="menu-icon">
                     <a href="#"><i class="ri-menu-line"></i></a>
                 </div>
+            </div>         
+        </header>      
+            <div class="title">
+                <div class="title-content">
+                  
+                    <div class="log">
+                        <img src="./img/logo.png" alt="">
+                    </div>
+                    <h1>CONTACT US<span>GET IN TOUCH FOR HELP</span></h1>
+                    <div class="line">
+                    <hr/>
+                    </div>
+                </div>
             </div>
-            </div>
-        </header>
+            <section class="container">             
+            <div class="news">          
+            <div class="location">
+                <div class="log">
+                    <img src="./img/pen.png" alt="">
+                </div>
+                <div class="location-text">
+                    <h1>AURAM SAFARIS LTD</h1>
+                    <div class="contact">                 
+                        <div class="wrap">
+                     <i class="fa-solid fa-location-dot"></i>
+                        <p>Njiro - Arusha, Tanzania</p>
+                        </div>
+                        <div class="wrap">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info@auramsafaris.com</p>
+                        </div>
+                        <div class="wrap">
+                        <i class="fa-solid fa-house"></i>
+                        <p>auramsafaris</p>
+                        </div>
+                        <div class="wrap">
+                        <div class="wrap-1">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <p>+(255)784 290 621</p>
+                        <div class="map">
+                            <img src="./img/Map.png" alt="">
+                        </div>
+                        </div>
+                        </div>                    
+                    </div> 
+                </div>
 
-        <!--form desigin-->
-        <section class="contact">
-         <div class="contact-form">
-             <form onsubmit="sendEmail(); reset(); return false ">
-                <h3>GET IN TOUCH</h3>
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Email Id" required>
-                <input type="text" id="phone" placeholder="Phone no." required>
-                <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
-                <button type="submit">Send</button>
-             </form>
-         </div>
+            </div>
+            <div class="contact-form">
+                <form onsubmit="sendEmail(); reset(); return false ">
+                   <h3>NEED HELP PLANNING YOUR NEXT TANZANIA TOUR?</h3>
+                   <h1>Whatever you want your luxury tour or safari itinerary to contain, 
+                    we’ll design something completely tailored only for you…and you alone.</h1>
+                   <input type="text" id="name" placeholder="Name" required>
+                   <input type="email" id="email" placeholder="Email" required>
+                   <input type="text" id="phone" placeholder="Subject" required>
+                   <textarea id="message" rows="4" placeholder="Message"></textarea>
+                   <button type="submit">Send</button>
+                </form>
+            </div>
         </section>
-         <!-- Include the Email.js library -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-<script>
-    // Initialize Email.js with your user ID
-    emailjs.init("jatDJaGBMNPrDX257");
-
-    function sendEmail() {
-        var templateParams = {
-            name: document.getElementById("name").value,
-            email: document.getElementById("email").value,
-            phone: document.getElementById("phone").value,
-            message: document.getElementById("message").value
-        };
-
-        // Send email using Email.js
-        emailjs.send("service_y1lw00g","template_f4pgv8r", templateParams)
-            .then(function(response) {
-                console.log("Email sent successfully:", response);
-                alert("Message Sent Successfully");
-            }, function(error) {
-                console.log("Email sending failed:", error);
-                alert("Failed to send message. Please try again later.");
-            });
-    }
-</script>
-
+            <!---footer section design--> 
       
-            
-        <!---custom js file link-->
-        <script src="js/script.js"></script>
-
+            <section class="footer">
+                <div class="footer-box">
+                    <a href="#">About Auram Safaris</a>
+                    <a href="choose_Us.html">Why Choose us?</a>
+                    <a href="pack-list.html"> Kilimanjaro Packing List</a>
+                    <a href="Insurance.html"> Kilimanjaro Travel Insurance</a>
+                    <a href="Kilimanjaro.html">Best Time to Climb Mt.Kilimanjaro</a>
+                </div>
+    
+                <div class="footer-box">
+                    <h3>TANZANIA TOURS</h3>
+                    <a href="Photographic.html">Photographic Safaris</a>
+                    <a href="migrate.html">Migration River Crossing</a>
+                    <a href="family.html">Family Safaris</a>
+                    <a href="moon.html">Honeymoon</a>
+                    <a href="walking.html">Walking Safaris</a>
+                </div>
+                <div class="footer-box">
+                    <h3>TREKKING SAFARIS</h3>
+                    <a href="machame.html">Machame Route</a>
+                    <a href="rongai.html">Rongai Route</a>
+                    <a href="lemosho.html">Lemosho Route</a>
+                    <a href="marangu">Marangu Route</a>
+                    <a href="bike.html">Mountain Bike Adventure</a>
+                </div>
+                <div class="footer-box">
+                    <h3>TAILOR-MADE SAFARIS</h3>
+                    <a href="cultural.html">Cultural Tours</a>
+                    <a href="beach.html">Zanzibar Beach Holiday</a>
+                    <a href="biking.html">Biking Safaris</a>
+                    <a href="camping.html">Camping Safaris</a>
+                    <a href="form.html">Create my Dream Safari!</a>
+                </div> 
+    
+                <div class="footer-box">
+                    <h3>About</h3>
+                    <a href="#">Our story</a>
+                    <a href="#">Benefits</a>
+                    <a href="#">Team</a>
+                    <a href="#">Careers</a>
+                   
+                </div>
+    
+                <div class="footer-box">
+                    <h3>Help</h3>
+                    <a href="FAQ.html">FAQs</a>
+                    <a href="contact.html">Contact us</a>
+                </div>      
+               </section>
+               
+               <!---social-->
+               <section class="boxy">
+                <div class="social-box">
+                  <div class="social">
+                      <a href="#"><i class="ri-instagram-fill"></i></a>
+                      <a href="#"><i class="ri-youtube-fill"></i></a>
+                      <a href="#"><i class="ri-facebook-fill"></i></a>
+                      <a href="#"><i class="ri-pinterest-fill"></i></a>
+                  </div>
+              </div> 
+          </section>
+                 <!---copyright--> 
+                 <div class="copyright">
+                    <p>AURAM SAFARIS ©2024-All rights reserved | By Haezel | Leviton</p>
+        
+                   </div>
+               
+                <!---custom js file link-->
+                <script src="js/script.js"></script>
     </body>
 </html>
