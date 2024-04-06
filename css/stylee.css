@@ -454,6 +454,23 @@ header.sticky{
     justify-content: center;
     display: flex;
 }
+.content{
+    position: absolute;
+    max-width: 850px; 
+    display: block;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.5s;
+    left: 10px;
+    padding: 0 500px 0 130px;
+   
+}
+.content.active{
+    display: block;
+    visibility: visible;
+    transform: scale(1);
+    transition: 0.5s;
+}
 .banner .content h4{
     color: rgb(243, 243, 31);
     font-weight: 400;
