@@ -78,7 +78,6 @@ span{
     font-size: 20px;
     color: #fff;
     margin-right: 18px;
-    margin-left: 5px;
     transition: all .50s ease;
 }
 .h-right a:hover{
@@ -114,7 +113,7 @@ section{
 
 .title-content h1{
     display: grid;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     text-align: center;
     color: #fff;
@@ -314,6 +313,9 @@ section{
     line-height: 20PX;
     margin-bottom: 20px;   
 }
+.buton{
+    text-align: center;
+}
 .buton a{
     color: #000000;
     display: inline-block;
@@ -502,6 +504,48 @@ section{
     .faq{
     grid-template-columns: 1fr;
     }
+    .semi {
+        height: 50vh;
+        width: 100%;
+    }
+    .leader{
+        display: grid;
+        gap: 1rem;    
+        margin: 20px 0;
+    }
+    .v{
+        display: none;
+    }
+    .hh{
+        display: none;    
+    }
+    .leader-text p {
+        text-align: center;
+    }
+    .time {
+        padding: 2vw 5vw;
+        margin-bottom: 20px;
+    }
+    .price {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2vw 15vw;
+    }
+    .semi-content{
+        padding: 4vw 10vw;
+    }
+    .semi-content h1 {
+        font-size: 30px;
+    }
+    .buton a {   
+        padding: 13px 20px;    
+        letter-spacing: 3px;
+    }
+    .semi-content h1{
+        letter-spacing: 0;
+    }
         
 } 
 @media (max-width: 800px){
@@ -531,9 +575,7 @@ section{
     }
 
     .faq{
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 100px;
+
         padding-bottom: 18px;
         gap: 1rem;
     }
@@ -582,5 +624,6 @@ section{
         font-size: 12px;
         line-height: 20px;    
     }
+    
 }
 

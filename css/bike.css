@@ -78,7 +78,6 @@ span{
     font-size: 20px;
     color: #fff;
     margin-right: 18px;
-    margin-left: 5px;
     transition: all .50s ease;
 }
 .h-right a:hover{
@@ -137,7 +136,7 @@ section{
     justify-content: center;
 }
 .faq-img img{
-    width: 90%;
+    width: 100%;
     height: 90vh;
     border-radius: 10px;
     box-shadow: 0  20px 20px rgba(0, 0, 0, 0.7);
@@ -284,7 +283,6 @@ section{
 .semi{
     height: 60vh;
     width: 100%; 
-    display: flex;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.464)),url(../img/safari-group-grazing.jpg);
     object-fit: cover;
     background-size: cover; 
@@ -307,12 +305,18 @@ section{
 .semi-content p{
     position: relative;
     color: #fff;
-    text-align: justify;
+    text-align: center;
     padding: 1vw;
     font-size: 16px;
     font-weight: 600;
     line-height: 20PX;
     margin-bottom: 20px;   
+}
+.buton{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .buton a{
     color: #000000;
@@ -433,9 +437,10 @@ section{
     .faq{
         gap: 3rem;
     }
-    /*.faq-img img {
+    .faq-img img {
         height: 50vh;
-    }*/
+    }
+  
 
 }
 @media (max-width: 1200px){
@@ -460,9 +465,9 @@ section{
     .home{
         height: 90vh;
     }
-  /*.faq-img img {
+    .faq-img img {
         height: 50vh;
-    }*/
+    }
 }
 @media (max-width: 1040px){
     .feature-content{
@@ -502,6 +507,49 @@ section{
     .faq{
     grid-template-columns: 1fr;
     }
+    .semi {
+        height: 50vh;
+        width: 100%;
+    }
+    .leader{
+        display: grid;
+        gap: 1rem;    
+        margin: 20px 0;
+    }
+    .v{
+        display: none;
+    }
+    .hh{
+        display: none;    
+    }
+    .leader-text p {
+        text-align: center;
+    }
+    .time {
+        padding: 2vw 5vw;
+        margin-bottom: 20px;
+    }
+    .price {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2vw 15vw;
+    }
+    .semi-content{
+        padding: 4vw 10vw;
+    }
+    .semi-content h1 {
+        font-size: 30px;
+    }
+    .buton a {   
+        padding: 13px 20px;    
+        letter-spacing: 3px;
+    }
+    .semi-content h1{
+        letter-spacing: 0;
+    }
+        
         
 } 
 @media (max-width: 800px){
@@ -531,9 +579,6 @@ section{
     }
 
     .faq{
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 100px;
         padding-bottom: 18px;
         gap: 1rem;
     }

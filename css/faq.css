@@ -77,7 +77,7 @@ span{
     font-size: 20px;
     color: #fff;
     margin-right: 18px;
-    margin-left: 5px;
+
     transition: all .50s ease;
 }
 .h-right a:hover{
@@ -101,13 +101,14 @@ section{
     object-fit: cover;
     background-size: cover;   
 }
-.title-content{
+.title-content {
     position: relative;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 1px;
-    top: 17%;
+    text-align: center;
+    top: 50%;
 }
 .title .log img{
     position:relative;
@@ -115,15 +116,8 @@ section{
     left: 110%;
     
 }
-.container{
-    line-height: 8px;
-    position: relative;
-    width: 100%;
-    flex-wrap: wrap;
-    align-content: flex-start;
-}
+
 .title-content h1{
-    margin-bottom: 600px;
     display: grid;
     font-size: 40px;
     font-weight: 700;
@@ -356,6 +350,9 @@ section{
     .faq{
     grid-template-columns: 1fr;
     }
+    .title-content {
+        top: 50%;
+    }
         
 } 
 @media (max-width: 800px){
@@ -385,9 +382,6 @@ section{
     }
 
     .faq{
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 100px;
         padding-bottom: 18px;
         gap: 1rem;
     }

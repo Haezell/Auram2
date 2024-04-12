@@ -126,9 +126,8 @@ span{
     display: none;
 }
 .title{
-    height: 90vh;
+    height: 70vh;
     width: 100%; 
-    display: flex;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.464)),url(../img/rachael.jpg);
     object-fit: cover;
     background-size: cover;
@@ -155,8 +154,8 @@ span{
     font-size: 20px;
     text-align: center;
     font-weight: 300;
-    color: #ca9393;
-    line-height: 10PX;
+    color: #e7d1d1;
+    line-height: 24px;
 }
 
 .title-content p{
@@ -182,10 +181,12 @@ span{
 }
 .news{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-template-columns: repeat(2, auto);
     align-items: center;
     text-align: center;
     justify-content: center;
+    padding: 1vw 10vw;
+    gap: 1rem;
 }
 
 .location .image img{
@@ -202,9 +203,8 @@ span{
 
 .image{
     overflow: hidden;
-    width: 90%;
+    width: 100%;
     height: 45vh;
-    margin-left: 10px;
     border: 3px solid #d9d6d2;  
     border-radius: 10px;
     cursor: pointer;
@@ -255,7 +255,6 @@ span{
 .semi{
     height: 60vh;
     width: 100%; 
-    display: flex;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.464)),url(../img/rachael.jpg);
     object-fit: cover;
     background-size: cover;
@@ -263,7 +262,7 @@ span{
 }
 .semi-content{
     position: relative;
-    padding: 10vw 20vw;  
+    padding: 6vw 10vw;    
 }
 .semi-content h1{
     display: grid;
@@ -286,7 +285,7 @@ span{
 .semi-content p{
     position: relative;
     color: #fff;
-    text-align: justify;
+    text-align: center;
     padding: 1vw;
     font-size: 16px;
     font-weight: 600;
@@ -460,10 +459,30 @@ span{
     .slider-navigation {
         margin-bottom: 100px;
     }
+    .news{
+        padding: 1vw 2vw;
+    }
 }
 @media (max-width: 800px){
     html {
         font-size: 14px !important;
+    }
+    .container {
+        padding: 0;
+    }
+    .list-text{
+        margin: 0;
+    }
+    .text {
+        margin-left: 0;
+        width: 100%;
+        text-align: justify;
+        padding: 1vw 10vw;
+        margin-top: 15px;
+    }
+    .news{
+        grid-template-columns: repeat(1, auto);
+        
     }
 }  
 @media (max-width: 650px){

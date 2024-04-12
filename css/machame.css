@@ -78,7 +78,7 @@ span{
     font-size: 20px;
     color: #fff;
     margin-right: 18px;
-    margin-left: 5px;
+   
     transition: all .50s ease;
 }
 .h-right a:hover{
@@ -125,7 +125,7 @@ section{
     text-align: center;
     font-weight: 1px;
     color: #fff;
-    line-height: 10PX;
+    line-height: 20px;
 }
 
 .faq{
@@ -301,18 +301,21 @@ section{
     color: #fff;
     filter: drop-shadow(0 10px 12px #000);
     margin-bottom: 20px;
-    letter-spacing: 6px;
+  
 }
 
 .semi-content p{
     position: relative;
     color: #fff;
-    text-align: justify;
+    text-align: center;
     padding: 1vw;
     font-size: 16px;
     font-weight: 600;
     line-height: 20PX;
     margin-bottom: 20px;   
+}
+.buton{
+    text-align: center;
 }
 .buton a{
     color: #000000;
@@ -501,6 +504,44 @@ section{
     .faq{
     grid-template-columns: 1fr;
     }
+    .time {
+        grid-template-columns: repeat(2, auto);
+    }
+    .secton {
+        padding: 2vw 5vw;
+    }
+    .h{
+        width: 200px;
+    }   
+    .semi {
+        height: 50vh;
+        width: 100%;
+    }
+    .leader{
+        display: grid;
+        gap: 1rem;    
+        margin: 20px 0;
+    }
+    .v{
+        display: none;
+    }
+    .hh{
+        display: none;    
+    }
+    .leader-text p {
+        text-align: center;
+    }
+    .time {
+        padding: 2vw 5vw;
+        margin-bottom: 20px;
+    }
+    .price {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2vw 15vw;
+    }
         
 } 
 @media (max-width: 800px){
@@ -529,19 +570,84 @@ section{
         display: none;
     }
 
-    .faq{
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 100px;
+    .faq{ 
         padding-bottom: 18px;
         gap: 1rem;
     }
      .footer{
-    gap: 1rem;
-
+        gap: 1rem;
    }
     .footer-box h3{
-    font-size: 18px;
+       font-size: 18px;
+    }
+    .title-content {
+        top: 50%;
+    }
+    .title-content h1{
+        font-size: 30px;
+        padding: 0 12vw;
+    }
+    .semi-content {
+        padding: 10vw 10vw;
+    } 
+    .semi-content h1 {
+        font-size: 34px;
+    }
+    .semi-content p {
+     font-weight: 300;     
+    }
+    .buton a {
+        padding: 13px 20px;
+        letter-spacing: 3px;
+    }
+    .headers{
+        padding: 2vw 10vw;
+    }
+    .headers h1{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    .h{
+        display: none;
+    }
+    .time {
+        grid-template-columns: repeat(1, auto);
+    }
+    .semi {
+        height: 40vh;
+        width: 100%;
+    }
+    .secton {
+        padding: 0 20px;
+    }
+    .semi {
+        height: 50vh;
+        width: 100%;
+    }
+    .leader{
+        display: grid;
+        gap: 1rem;    
+        margin: 20px 0;
+    }
+    .v{
+        display: none;
+    }
+    .hh{
+        display: none;    
+    }
+    .leader-text p {
+        text-align: center;
+    }
+    .time {
+        padding: 2vw 5vw;
+        margin-bottom: 20px;
+    }
+    .price {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2vw 15vw;
     }
       
 }
@@ -565,6 +671,35 @@ section{
      .logo {
     font-size: 20px;
     }
+    .semi {
+        height: 50vh;
+        width: 100%;
+    }
+    .leader{
+        display: grid;
+        gap: 1rem;    
+        margin: 20px 0;
+    }
+    .v{
+        display: none;
+    }
+    .hh{
+        display: none;    
+    }
+    .leader-text p {
+        text-align: center;
+    }
+    .time {
+        padding: 2vw 5vw;
+        margin-bottom: 20px;
+    }
+    .price {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2vw 15vw;
+    }
 
 }
 @media (max-width: 390px){
@@ -580,6 +715,35 @@ section{
         margin-bottom: 0.1rem;    
         font-size: 12px;
         line-height: 20px;    
+    }
+    .semi {
+        height: 50vh;
+        width: 100%;
+    }
+    .leader{
+        display: grid;
+        gap: 1rem;    
+        margin: 20px 0;
+    }
+    .v{
+        display: none;
+    }
+    .hh{
+        display: none;    
+    }
+    .leader-text p {
+        text-align: center;
+    }
+    .time {
+        padding: 2vw 5vw;
+        margin-bottom: 20px;
+    }
+    .price {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2vw 15vw;
     }
 }
 

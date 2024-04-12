@@ -23,7 +23,7 @@ html{
     font-size: 14px;
 }
 body{
-    background: rgb(255, 255, 255);
+    background: #f3f1f1;
    
 }
 
@@ -128,8 +128,7 @@ span{
 /*section home*/
 section{
     padding: 70px 17% 60px;
-
-    
+   
 }
 .home{
     position: relative; 
@@ -282,6 +281,7 @@ header.sticky{
     font-size: 40px;
     font-weight: 800;
     margin: 0 0 50px 0;
+    text-align: center;
 }
 .feature span{
     font-size: 40px;
